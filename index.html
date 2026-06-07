@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho de Acessibilidade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <ul>
+            <li><a href="#introducao">Início</a></li>
+            <li><a href="#membros">Membros</a></li>
+            <li><a href="#acessibilidade">Acessibilidade e Internacionalização</a></li>
+            <li><a href="#principios">Princípios da Acessibilidade</a></li>
+            <li><a href="#ferramentas">Ferramentas de Teste</a></li>
+            <li><a href="#i18n-react">Internacionalização (React)</a></li>
+            <li><a href="#Conclusao">Conclusão</a></li>
+        </ul>
+    </header>
+
+    <div class="main">
+        <section class="introducao" id="introducao">
+            <div class="intro-content">
+                <h1>Trabalho de Acessibilidade</h1>
+
+            </div>
+        </section>
+
+        <section class="membros" id="membros">
+            <div class="section-content">
+                <h2>Membros do Projeto</h2>
+                <ul class="membros-lista">
+                    <li class="membro-card">
+                        <h3>Cauã Rodrigues</h3>
+                        <span class="divider"></span>
+                    </li>
+                    <li class="membro-card">
+                        <h3>Julia Vitoria</h3>
+                        <span class="divider"></span>
+                    </li>
+                    <li class="membro-card">
+                        <h3>Kauan Martins</h3>
+                        <span class="divider"></span>
+                    </li>
+                    <li class="membro-card">
+                        <h3>Sofia Barbosa</h3>
+                        <span class="divider"></span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="acessibilidade" id="acessibilidade">
+            <div class="section-content">
+                <h2>Acessibilidade e Internacionalização</h2>
+                <p>Com o crescimento da tecnologia e da internet, os sistemas digitais passaram a fazer parte do
+                    cotidiano das pessoas em praticamente todas as áreas da sociedade, como educação, comunicação,
+                    entretenimento, trabalho e serviços financeiros. Nesse contexto, tornou-se essencial desenvolver
+                    aplicações que possam ser utilizadas pelo maior número possível de usuários, independentemente de
+                    suas limitações físicas, cognitivas, culturais ou tecnológicas.
+                    <br>
+                    <br>
+                    A acessibilidade digital surge como uma solução para reduzir barreiras presentes em sites e
+                    aplicações, permitindo que pessoas com deficiência visual, auditiva, motora ou cognitiva consigam
+                    navegar e interagir com sistemas de forma eficiente e independente. Além da inclusão social, a
+                    acessibilidade melhora a experiência do usuário, a organização das interfaces e a qualidade geral do
+                    software.
+                    <br>
+                    <br>
+                    Paralelamente, a internacionalização tornou-se uma prática fundamental no desenvolvimento moderno de
+                    aplicações, principalmente em sistemas voltados para públicos globais. Através dela, aplicações
+                    podem adaptar idiomas, moedas, datas e formatos culturais automaticamente, permitindo que usuários
+                    de diferentes países utilizem o sistema de maneira adequada e intuitiva.
+                    <br>
+                    <br>
+                    Dessa forma, este trabalho aborda os principais princípios de acessibilidade digital, ferramentas
+                    utilizadas para testes de acessibilidade e conceitos de internacionalização em aplicações React,
+                    destacando sua importância, aplicações práticas e impacto no desenvolvimento de sistemas mais
+                    inclusivos, modernos e eficientes.
+                </p>
+            </div>
+        </section>
+
+        <section class="principios" id="principios">
+            <div class="section-content">
+                <h2>Princípios da Acessibilidade</h2>
+                <p>A acessibilidade digital busca garantir que qualquer pessoa consiga
+                    utilizar sites e aplicações, independentemente de limitações visuais, auditivas, motoras ou
+                    cognitivas.
+                    Essas diretrizes existem porque muitas interfaces criam barreiras que impedem parte dos usuários de
+                    acessar informações corretamente.
+                    A WCAG, principal padrão mundial de acessibilidade, divide esses
+                    princípios em quatro áreas fundamentais: perceptível, operável,
+                    compreensível e robusto. O objetivo é tornar sistemas mais
+                    inclusivos, funcionais e eficientes para todos os usuários.
+                </p>
+                <br>
+                <br>
+                <h3>Perceptível</h3>
+                <p>O conteúdo deve ser apresentado de maneira que todos consigam percebê-lo.
+                    Isso inclui o uso de contraste adequado, textos alternativos em imagens,
+                    legendas em vídeos e interfaces que não dependam apenas de cores para transmitir informações.
+                    Essas práticas permitem que pessoas com deficiência visual, auditiva ou
+                    dificuldades de percepção consigam consumir o conteúdo corretamente.
+                </p>
+                <br>
+                <br>
+                <h3>Operável</h3>
+                <p> A interface deve permitir navegação fácil e funcional para qualquer usuário.
+                    Isso inclui compatibilidade com teclado, botões acessíveis, menus organizados
+                    e tempo suficiente para realizar ações.
+                    Esse princípio é importante porque muitos usuários utilizam tecnologias assistivas
+                    ou possuem limitações motoras que dificultam o uso tradicional do mouse.
+                </p>
+                <br>
+                <br>
+                <h3>Compreensível</h3>
+                <p> O conteúdo e a interface devem ser claros e fáceis de entender.
+                    Isso envolve o uso de linguagem simples, instruções claras, feedback consistente e design intuitivo.
+                    Interfaces confusas aumentam erros, frustração e abandono da aplicação.
+                </p>
+                <br>
+                <br>
+                <h3>Robusto</h3>
+                <p>O sistema deve funcionar corretamente em diferentes navegadores, dispositivos
+                    e tecnologias assistivas. Para isso, é importante utilizar HTML semântico,
+                    responsividade e boas práticas de desenvolvimento.
+                    Esse princípio garante maior compatibilidade e durabilidade da aplicação ao longo do tempo.
+            </div>
+        </section>
+
+        <section class="ferramentas" id="ferramentas">
+            <div class="section-content">
+                <h2>Ferramentas para testes de acessibilidade</h2>
+                <p>As ferramentas de acessibilidade ajudam desenvolvedores a
+                    identificar problemas que dificultam o uso de sites e aplicações.
+                    Elas automatizam testes e auxiliam na criação de interfaces mais
+                    inclusivas.</p>
+                <br>
+                <br>
+                <h3>WAVE (Web Accessibility Evaluation Tool)</h3>
+                <p>O WAVE é uma ferramenta visual que destaca erros diretamente na
+                    interface do site. Ele permite identificar rapidamente
+                    problemas de acessibilidade, como ausência de textos
+                    alternativos e estrutura incorreta de títulos.É muito
+                    utilizado por sua simplicidade e facilidade de interpretação.
+                </p>
+                <br>
+                <br>
+                <h3>Lighthouse</h3>
+                <p>O Lighthouse é uma ferramenta integrada ao Google Chrome que
+                    analisa acessibilidade, performance e estrutura do site.
+                    Ele identifica problemas como contraste inadequado, imagens
+                    sem descrição e erros de navegação.
+                    eu principal objetivo é ajudar desenvolvedores a melhorar a
+                    qualidade geral da aplicação.
+                </p>
+                <br>
+                <br>
+                <h3>axe DevTools</h3>
+                <p>O axe DevTools é uma ferramenta profissional voltada para
+                    testes automatizados de acessibilidade. Muito usada em
+                    projetos React e aplicações modernas, ela ajuda equipes a
+                    detectar problemas durante o desenvolvimento do sistema.
+                    Isso reduz falhas antes da publicação do projeto.
+                    <br>
+                    <br>
+                <h3>Leitores de Tela</h3>
+                <p>Leitores de tela transformam elementos visuais em áudio para
+                    usuários com deficiência visual.
+                    Ferramentas como NVDA, JAWS e VoiceOver permitem navegar pela
+                    internet utilizando apenas comandos de
+                    voz e teclado.
+                    Esses testes são importantes porque simulam a experiência real
+                    de usuários cegos dentro da
+                    aplicação.</p>
+                </p>
+            </div>
+        </section>
+
+        <section class="i18n-react" id="i18n-react">
+            <div class="section-content">
+                <h2>Internacionalização em aplicações React</h2>
+                <p>A internacionalização, conhecida como i18n, é o processo de
+                    preparar aplicações para suportar
+                    múltiplos idiomas e regiões. Ela é essencial para sistemas que
+                    desejam alcançar usuários de
+                    diferentes países e culturas.
+                    Além da tradução de textos, a internacionalização adapta
+                    moedas, datas, horários e formatos
+                    regionais.
+                    <br>
+                    <br>
+                <h3>React-i18next</h3>
+                <p>O React-i18next é uma biblioteca popular para implementar
+                    internacionalização em aplicações React. Ele oferece uma
+                    API simples e poderosa para gerenciar traduções, detecção de
+                    idioma e formatação de conteúdo.
+                    Com recursos como namespaces, interpolação e suporte a
+                    pluralização, o React-i18next facilita a criação de interfaces
+                    multilíngues de forma eficiente e escalável.
+                    <br>
+                    <br>
+                <h3>Formatação Internacional</h3>
+                <p>Cada país utiliza formatos diferentes para datas, moedas e números. Por isso, aplicações
+                    internacionais precisam adaptar essas informações automaticamente conforme a região do usuário.
+                    Essa adaptação evita confusão e torna o sistema mais profissional e acessível.
+                    <br>
+                    <br>
+                <h3>Estrutura de Tradução</h3>
+                <p>Organizar as traduções em arquivos separados por idioma é uma prática comum. Isso facilita a
+                    manutenção e a adição de novos idiomas no futuro. Utilizar chaves descritivas para cada
+                    texto também ajuda a manter o código limpo e compreensível.
+                </p>
+            </div>
+        </section>
+
+        <section class="conclusao" id="Conclusao">
+            <div class="section-content">
+                <h2>Conclusão</h2>
+                <p>A acessibilidade digital e a internacionalização são elementos fundamentais no desenvolvimento de
+                    aplicações modernas, pois tornam os sistemas mais inclusivos, eficientes e preparados para
+                    diferentes públicos. Em um cenário onde a tecnologia está presente no cotidiano das pessoas,
+                    garantir que todos consigam acessar e utilizar plataformas digitais deixou de ser apenas um
+                    diferencial e passou a ser uma necessidade.
+                    <br>
+                    <br>
+                    A acessibilidade digital e a internacionalização são elementos fundamentais no desenvolvimento de
+                    aplicações modernas, pois tornam os sistemas mais inclusivos, eficientes e preparados para
+                    diferentes públicos. Em um cenário onde a tecnologia está presente no cotidiano das pessoas,
+                    garantir que todos consigam acessar e utilizar plataformas digitais deixou de ser apenas um
+                    diferencial e passou a ser uma necessidade.
+                    <br>
+                    <br>
+                    Da mesma forma, a internacionalização em aplicações React possibilita adaptar sistemas para
+                    diferentes idiomas e culturas, ampliando o alcance global das aplicações e oferecendo uma
+                    experiência mais adequada para usuários de diferentes regiões do mundo.
+                    <br>
+                    <br>
+                    Portanto, investir em acessibilidade e internacionalização não melhora apenas a inclusão digital,
+                    mas também aumenta a qualidade, usabilidade e profissionalismo dos sistemas. Essas práticas
+                    representam uma parte essencial do desenvolvimento tecnológico atual e contribuem para a construção
+                    de uma internet mais acessível, eficiente e universal.
+                </p>
+            </div>
+        </section>
+
+        <section class="encerramento">
+            <div class="intro-content">
+                <h1>Obrigado Pela Atenção!! :DD</h1>
+
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>©2026, Todos os direitos reservados.</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const sections = document.querySelectorAll('section');
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.2
+            });
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+
+</html>
