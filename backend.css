@@ -1,7 +1,7 @@
 :root {
-    --cor-primaria: #C8E6E2;
-    --cor-secundaria: #D8B4C0;
-    --cor-destaque: #F7F7F5;
+    --cor-primaria: #7C9CBF;
+    --cor-secundaria: #B4A7D6;
+    --cor-destaque: #F2F2F2;
     --cor-texto: #fff;
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
@@ -32,7 +32,7 @@ html {
     right: 0;
     background: var(--cor-primaria);
     color: var(--cor-texto);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 12px rgba(124, 156, 191, 0.25);
     z-index: 100;
     width: 100%;
 }
@@ -88,7 +88,11 @@ html {
 }
 
 .main > .introducao,
-.main > .membros {
+.main > .membros,
+.main > .introducao-tdd,
+.main > .Testes-de-Integração,
+.main > .testes-de-integracao,
+.main > .testes-performance {
     width: 100%;
 }
 
@@ -167,19 +171,19 @@ html {
 }
 
 .membro-card {
-    background: rgba(200, 230, 226, 0.85);
-    border-left: 4px solid #A6CFC8;
+    background: var(--cor-primaria);
+    border-left: 4px solid var(--cor-primaria);
     padding: var(--spacing-md);
     border-radius: 8px;
     transition: all var(--transition-speed) ease;
     backdrop-filter: blur(10px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(124, 156, 191, 0.18);
 }
 
 .membro-card:hover {
-    background: #61ada3f2;
+    background: #5a7dac;
     transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(216, 180, 192, 0.35);
+    box-shadow: 0 8px 25px rgba(180, 167, 214, 0.35);
 }
 
 .membro-card h3 {
@@ -193,11 +197,10 @@ html {
     display: inline-block;
     width: 40px;
     height: 3px;
-    background: #93ddd3f2;
+    background: #9bb6da;
     border-radius: 2px;
     margin-top: var(--spacing-xs);
 }
-
 
 /* Novas seções do header */
 section {
@@ -210,7 +213,7 @@ section {
     padding: var(--spacing-lg) var(--spacing-sm);
     scroll-margin-top: 70px;
     margin-bottom: 1.5rem;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 15px 35px rgba(124, 156, 191, 0.12);
     border-radius: 12px;
     background-clip: padding-box;
     opacity: 0;
@@ -243,19 +246,16 @@ section p {
     color: inherit;
 }
 
-section img {
-    display: block;
-    width: 100%;
-    max-width: 320px;
-    height: auto;
-    margin: 0 auto var(--spacing-md);
-    border-radius: 14px;
-    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
-    object-fit: cover;
-}
-
 .acessibilidade,
-.ferramentas {
+.ferramentas,
+.introducao-tdd,
+#introducao-tdd,
+.Testes-de-Integração,
+#Testes-de-Integração,
+.testes-de-integracao,
+#testes-de-integracao,
+.testes-performance,
+#testes-performance {
     background: var(--cor-secundaria);
     color: var(--cor-texto);
 }

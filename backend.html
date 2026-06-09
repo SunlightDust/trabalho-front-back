@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho de Acessibilidade</title>
+    <link rel="stylesheet" href="backend.css">
+</head>
+
+<body>
+    <header class="header">
+        <ul>
+            <li><a href="#introducao">Início</a></li>
+            <li><a href="#membros">Membros</a></li>
+            <li><a href="#introducao-tdd">Introdução ao TDD (Test-Driven Development)</a></li>
+            <li><a href="#Testes-de-Integração">Testes de Integração</a></li>
+            <li><a href="#testes-performance">Testes de Performance</a></li>
+            <li><a href="#Conclusao">Conclusão</a></li>
+            <li><a href="index.html">Front-End</a></li>
+        </ul>
+    </header>
+
+    <div class="main">
+        <section class="introducao" id="introducao">
+            <div class="intro-content">
+                <h1>TDD e Testes Automatizados</h1>
+
+            </div>
+        </section>
+
+        <section class="membros" id="membros">
+            <div class="section-content">
+                <h2>Membros do Projeto</h2>
+                <ul class="membros-lista">
+                    <li class="membro-card">
+                        <h3>Cauã Rodrigues</h3>
+                        <span class="divider"></span>
+                    </li>
+                    <li class="membro-card">
+                        <h3>Julia Vitoria</h3>
+                        <span class="divider"></span>
+                    </li>
+                    <li class="membro-card">
+                        <h3>Kauan Martins</h3>
+                        <span class="divider"></span>
+                    </li>
+                    <li class="membro-card">
+                        <h3>Sofia Barbosa</h3>
+                        <span class="divider"></span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="introducao-tdd" id="introducao-tdd">
+            <div class="section-content">
+                <h2>Introdução ao TDD (Test-Driven Development)</h2>
+                <p>O TDD (Test-Driven Development), ou Desenvolvimento
+                    Orientado por Testes, é uma metodologia de
+                    de software que prioriza a criação de testes antes
+                    da implementação do código. O objetivo é garantir
+                    que cada funcionalidade desenvolvida atenda aos
+                    requisitos esperados desde o início do processo.
+                    <br>
+                    <br>
+                    O ciclo do TDD é composto por três etapas principais
+                    : escrever um teste que inicialmente falha,
+                    desenvolver o código necessário para fazer o teste
+                    passar e, por fim, refatorar o código para melhorar
+                    sua qualidade sem alterar seu comportamento. Esse
+                    processo é repetido continuamente durante o
+                    desenvolvimento.
+                    <br>
+                    <br>
+                    Entre os principais benefícios do TDD estão a
+                    redução de erros, a melhoria da qualidade do
+                    software, a maior confiança para realizar alterações
+                    no código e a criação de uma documentação prática
+                    do funcionamento do sistema através dos próprios testes.
+                    <br>
+                    <br>
+                <h3>Aprofundando o Ciclo Red-Green-Refactor</h3>
+                <p> Na prática, essa disciplina mental ajuda o
+                    desenvolvedor a focar estritamente no que é
+                    necessário para resolver o problema atual,
+                    evitando a armadilha de escrever linhas de
+                    código desnecessárias ou complexas demais
+                    (o famoso princípio YAGNI - You Ain't Gonna Need It).
+                    Ao ver o teste falhar (Red) e depois passar
+                    (Green), o programador ganha uma rede de segurança
+                    psicológica que torna o momento da refatoração
+                    (Refactor) muito mais seguro, permitindo limpar o
+                    código, eliminar duplicidades e aplicar padrões de
+                    projeto sem o medo de quebrar o sistema.</p>
+                </p>
+            </div>
+        </section>
+
+        <section class="Testes-de-Integração" id="Testes-de-Integração">
+            <div class="section-content">
+                <h2>Testes de Integração</h2>
+                <p>Os testes de integração são responsáveis por verificar
+                    se diferentes módulos, componentes ou serviços de um sistema
+                    funcionam corretamente quando trabalham em conjunto. Enquanto os
+                    testes unitários analisam partes isoladas do código, os testes
+                    de integração avaliam a comunicação entre essas partes.
+                </p>
+                <br>
+                <br>
+                <p>Por exemplo, em um sistema de e-commerce, um teste de integração
+                    pode verificar se o módulo de cadastro de clientes consegue
+                    armazenar corretamente as informações em um banco de dados e
+                    recuperá-las quando necessário.
+                </p>
+                <br>
+                <br>
+                <p> Esses testes ajudam a identificar problemas relacionados
+                    à troca de dados, incompatibilidades entre componentes e
+                    falhas que só aparecem quando diferentes partes do sistema
+                    interagem. Dessa forma, eles são essenciais para garantir
+                    que o software funcione de maneira consistente em ambientes reais.
+                </p>
+                <br>
+                <br>
+                <h3>Estratégias e Desafios de Integração</h3>
+                <p>À medida que a arquitetura de software evoluiu para modelos
+                    baseados em microsserviços e APIs de terceiros, os testes de
+                    integração tornaram-se ainda mais cruciais e complexos. Para
+                    executá-los com eficiência, os desenvolvedores utilizam estratégias
+                    como a criação de ambientes que simulam bancos de dados reais
+                    (usando containers como o Docker) ou ferramentas de mock para simular
+                    sistemas externos que não estão sob seu controle. Isso evita que
+                    falhas na rede externa ou indisponibilidades temporárias invalidem
+                    os testes locais da equipe.
+                </p>
+
+            </div>
+        </section>
+
+        <section class="testes-performance" id="testes-performance">
+            <div class="section-content">
+                <h2>Testes de Performance</h2>
+                <p>Os testes de performance são utilizados para avaliar
+                    o desempenho de um sistema sob diferentes condições
+                    de uso. Seu principal objetivo é medir aspectos como
+                    velocidade, estabilidade, tempo de resposta e capacidade
+                    de processamento.</p>
+                <br>
+                <br>
+                <p>Existem diversos tipos de testes de performance,
+                    incluindo testes de carga, que analisam o comportamento
+                    do sistema sob uma quantidade esperada de usuários; testes de
+                    estresse, que verificam os limites máximos suportados;
+                    e testes de escalabilidade, que avaliam a capacidade de
+                    crescimento da aplicação.
+                </p>
+                <br>
+                <br>
+                <p>A realização desses testes é fundamental para garantir
+                    uma boa experiência aos usuários, evitar lentidão e
+                    identificar gargalos antes que o sistema seja disponibilizado
+                    em produção. Ferramentas como JMeter, Gatling e LoadRunner são
+                    amplamente utilizadas para esse tipo de avaliação.
+                </p>
+                <br>
+                <br>
+                <h3>Cultura de Performance e o Custo da Lentidão</h3>
+                <p>> O impacto de negligenciar essa etapa pode ser devastador para
+                    os negócios. Grandes empresas de tecnologia já comprovaram em
+                    estudos que atrasos de milissegundos no carregamento de uma
+                    página geram perdas milionárias e fazem com que os usuários
+                    migrem para a concorrência. Por isso, os testes de performance
+                    deixaram de ser um evento isolado feito antes do lançamento e
+                    passaram a ser integrados diretamente nas esteiras de automação
+                    (CI/CD), permitindo que qualquer queda brusca no tempo de resposta
+                    seja detectada e corrigida imediatamente após uma alteração no código.
+                    <br>
+                    <br>
+                </p>
+
+            </div>
+        </section>
+
+        <section class="conclusao" id="Conclusao">
+            <div class="section-content">
+                <h2>Conclusão</h2>
+                <p>TDD, testes de integração e testes de performance são práticas
+                    fundamentais para o desenvolvimento de software moderno. Enquanto o
+                    TDD ajuda a construir código mais confiável desde o início, os
+                    testes de integração garantem a comunicação correta entre os componentes
+                    do sistema e os testes de performance asseguram que a aplicação
+                    consiga atender seus usuários de forma eficiente. Juntas, essas técnicas
+                    contribuem para a criação de sistemas mais robustos, seguros e de alta
+                    qualidade.
+                    <br>
+                    <br>
+                    > Adotar todas essas abordagens de forma combinada exige
+                    planejamento e equilíbrio, um conceito frequentemente ilustrado pela
+                    "Pirâmide de Testes". Um projeto saudável mantém uma base sólida
+                    e volumosa de testes unitários rápidos via TDD, uma camada intermediária
+                    focada em integrações essenciais e uma rotina estratégica de validação de
+                    performance. Investir nessa sinergia mitiga os riscos técnicos e financeiros de um projeto,
+                    transformando a engenharia de software em um processo previsível, escalável e de alto valor
+                    agregado.
+                </p>
+            </div>
+        </section>
+
+        <section class="encerramento">
+            <div class="intro-content">
+                <h1>Obrigado Pela Atenção!! :DD</h1>
+
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>©2026, Todos os direitos reservados.</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const sections = document.querySelectorAll('section');
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.2
+            });
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+
+</html>
